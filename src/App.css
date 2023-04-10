@@ -30,7 +30,8 @@ body {
 .container {
     background-color: #ffffff81;
     max-width: 350px;
-    margin: 0 auto;
+    margin-left: 2rem;
+    margin-right: 2rem; 
     border-radius: 1rem;
 }
 
@@ -151,5 +152,6 @@ footer {
 @media (min-width: 700px) {
     .container {
         max-width: 500px;
+        margin: 0 auto;
     }
 }
