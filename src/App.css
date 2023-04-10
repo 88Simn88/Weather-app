@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-image: url("../public/img/fondo3.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.background {
+    height: 100vh;
+    width: 100vw;
+}
+
+.loading {
+    background-color: #ffffff;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: #ffffff81;
+    max-width: 350px;
+    margin: 0 auto;
+    border-radius: 1rem;
+}
+
+.title {
+    text-align: center;
+    font-size: 34px;
+    padding: 1rem;
+    margin-top: 5rem;
+}
+
+.subtitle {
+    padding: 1rem;
+}
+
+.appInfo {
+    margin: 0 auto;
+    border-radius: 1rem;
+    margin-top: 1rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+}
+
+.input {
+    border-style: hidden;
+    border-radius: 2px;
+    margin-right: 5px;
+}
+
+.btn1 {
+    border-radius: 2px;
+    padding: 5px;
+    border-style: hidden;
+    background-color: #cccccc;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+.btn1:hover {
+    transform: scale(1.1);
+}
+
+.iconInfo {
+    display: flex;
+}
+
+.icon {
+    transition: scale 0.5s;
+}
+
+.icon:hover {
+    scale: 1.1;
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 18px;
+}
+
+ul {
+    list-style: none;
+    padding: 1rem;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+li {
+    font-weight: 700;
+    padding: 0.4rem;
+}
+
+li>span {
+    font-weight: 400;
+}
+
+.wind {
+    padding-right: 0.6rem;
+}
+
+.clouds {
+    padding-right: 3rem;
+}
+
+.pressure {
+    padding-right: 2rem;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.temperature {
+    padding: 1rem;
+}
+
+.btn2 {
+    padding: 1rem;
+    border-style: hidden;
+    border-radius: 1rem;
+    cursor: pointer;
+    background-color: #cccccc;
+    transition: transform 0.5s;
+    font-weight: 700;
+}
+
+.btn2:hover {
+    transform: scale(1.1);
+}
+
+@media (min-width: 700px) {
+    .container {
+        max-width: 500px;
+    }
+}

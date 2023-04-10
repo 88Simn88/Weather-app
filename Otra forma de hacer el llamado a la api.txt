@@ -1,0 +1,17 @@
+      const url = `https://api.openweathermap.org/data/2.5/weather?q=lat=${latlon.lat}&lon=${latlon.lon}&appid=${apikey}`
+
+
+if(inputValue) {
+      const apikey = "6a93d0fc2ea0fe1e17d645b456124521"
+      const url = `https://api.openweathermap.org/data/2.5/weather?q=${inputValue}&appid=${apikey}`
+      
+
+      axios.get(url)
+      .then(res => {
+        setWeather(res.data)
+        const celsius = (res.data.main.temp - 273.15).toFixed(1)
+        const farenheit = (celsius * 9/5 + 32).toFixed(1)
+        setTemperature({celsius, farenheit})
+      })
+      .catch(err => console.log(err))
+    } else {
